@@ -20,6 +20,7 @@ body {
   width: 425px;
   height: 913px;
 }
+
 .toolbar {
   display: flex;
   justify-content: space-between;
@@ -27,10 +28,12 @@ body {
   width: 100%;
   height: 5%;
 }
+
 .myLogo {
   height: 40%;
   margin-left: 2%;
 }
+
 .headline-section {
   display: flex;
   justify-content: center;
@@ -38,40 +41,48 @@ body {
   height: 100%;
   position: relative;
 }
+
 .background-img {
   border-radius: 10px;
   width: 100%;
   z-index: -1;
   position: absolute;
 }
+
 .aboutme-div {
   margin-top: 30%;
   margin-left: 3%;
 }
+
 .me {
   font-size: 70px;
 }
+
 .about-me {
   font-size: 20px;
   color: #344563;
   margin: 12px 0;
   font-weight: bold;
 }
+
 .media-icons-div {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-top: 10%;
 }
+
 .letsconnect {
   width: 50%;
 }
+
 .social-media-icons-div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 5%;
 }
+
 .a {
   height: 100%;
 }
