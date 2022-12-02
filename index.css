@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap");
+
 * {
   margin: 0%;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,34 +14,24 @@ body {
   height: 100%;
 }
 
-/* section-1 */
-
-.section-1 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 425px;
-  height: 913px;
-}
-
 .toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 5%;
+  padding: 15px;
 }
 
 .myLogo {
   height: 40%;
-  margin-left: 2%;
 }
 
 .headline-section {
   display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  height: 913px;
   position: relative;
 }
 
@@ -55,34 +48,32 @@ body {
 }
 
 .me {
-  font-size: 70px;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
 }
 
 .about-me {
   font-size: 20px;
   color: #344563;
   margin: 12px 0;
-  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
-.media-icons-div {
+.social-icon-header {
+  color: #7f8cff;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.social-icon-container {
   display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin-top: 10%;
-}
-
-.letsconnect {
-  width: 50%;
-}
-
-.social-media-icons-div {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5%;
-}
-
-.a {
-  height: 100%;
+  width: 60%;
+  height: 10%;
+  margin-top: 2%;
+  list-style: none;
+  padding: 0;
 }
