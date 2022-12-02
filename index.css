@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap");
+
 * {
   margin: 0%;
 }
@@ -17,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 425px;
+  width: 375px;
   height: 913px;
 }
 
@@ -55,18 +57,21 @@ body {
 }
 
 .me {
-  font-size: 70px;
+  font-size: 60px;
+  font-family: "Poppins", sans-serif;
 }
 
 .about-me {
-  font-size: 20px;
+  font-size: 15px;
   color: #344563;
   margin: 12px 0;
   font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 .media-icons-div {
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   width: 50%;
   margin-top: 10%;
@@ -80,7 +85,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10%;
+  margin-left: -25%;
 }
 
 .a {
