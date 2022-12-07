@@ -424,26 +424,17 @@ main {
   margin-top: 5vh;
 }
 
-.name-input-formsection {
+.form-section-inputs {
   height: 5vh;
   width: 100%;
   padding-left: 10px;
   outline: none;
   border: none;
   border-radius: 8px;
-}
-
-.email-input-formsection {
-  height: 5vh;
-  width: 100%;
   margin-top: 15px;
-  padding-left: 10px;
-  outline: none;
-  border: none;
-  border-radius: 8px;
 }
 
-.form-text-area {
+.form-section-textarea {
   width: 100%;
   padding: 10px;
   margin-top: 15px;
@@ -453,7 +444,7 @@ main {
 }
 
 .form-button {
-  width: 14vh;
+  width: 16vh;
   height: 5vh;
   margin-top: 15px;
   border-radius: 8px;
@@ -461,7 +452,7 @@ main {
   color: #6070ff;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
   cursor: pointer;
   background-color: white;
 }
@@ -471,8 +462,7 @@ main {
 }
 
 .form-button:hover {
-  background-color: #8591ff;
-  color: white;
+  border: 2px solid black;
 }
 
 .form-button:active {
