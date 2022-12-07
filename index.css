@@ -380,67 +380,103 @@ main {
   align-items: center;
   background-color: #6955ff;
   width: 100%;
+  border-top-left-radius: 100px;
+  position: relative;
 }
 
-.icon-ellipse-ul {
+.footer-background-ul {
+  position: absolute;
   list-style: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 0;
+}
+
+.footer-background-img {
+  height: 550px;
 }
 
 .contact-title {
   font-size: 35px;
   color: white;
+  margin-top: 8vh;
+  z-index: 1;
   font-family: "Poppins", sans-serif;
 }
 
 .info-formsection {
-  padding: 20px 20px;
+  z-index: 1;
+  font-size: 15px;
+  font-weight: lighter;
+  text-align: center;
   color: white;
   font-family: "Poppins", sans-serif;
 }
 
 .form-container {
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   width: 90%;
+  margin-top: 5vh;
 }
 
-.name-input-formsection {
+.form-section-inputs {
   height: 5vh;
   width: 100%;
   padding-left: 10px;
   outline: none;
-}
-
-.email-input-formsection {
-  height: 5vh;
-  width: 100%;
+  border: none;
+  border-radius: 8px;
   margin-top: 15px;
-  padding-left: 10px;
-  outline: none;
 }
 
-.form-text-area {
+.form-section-textarea {
   width: 100%;
   padding: 10px;
   margin-top: 15px;
   outline: none;
+  border: none;
+  border-radius: 8px;
 }
 
 .form-button {
-  margin-top: 15px;
-  width: 14vh;
-  border-radius: 8px;
+  width: 16vh;
   height: 5vh;
+  margin-top: 15px;
+  border-radius: 8px;
   border: none;
   color: #6070ff;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.form-button:enabled {
+  background-color: none;
+}
+
+.form-button:hover {
+  border: 2px solid black;
+}
+
+.form-button:active {
+  background-color: #5e6efb;
+}
+
+.form-button:disabled {
+  background-color: none;
+  color: black;
+  border: black;
 }
 
 .end-line {
-  margin-top: 15px;
+  margin-top: 40px;
   width: 40%;
   margin-bottom: 8px;
   height: 4px;
