@@ -22,14 +22,23 @@
 
 > Portfolio built-with html and css
 
-<br> This project is exercise for module 1 week 1 of microverse program.
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 > This project is built-with **html** and **css**.
 
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[key_feature_1]**
+- **[key_feature_2]**
+- **[key_feature_3]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
@@ -67,11 +76,29 @@ npm run hint
 
 > Mention all of the collaborators of this project.
 
+👤 **Author1**
 👤 **Wai Yan Phyo**
 
-- GitHub: [@oyhynayiaw](https://github.com/oyhpnayiaw)
-- Twitter: [@oyhynayiaw](https://twitter.com/oyhpnayiaw)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/oyhpnayiaw)
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+👤 **aubin simpeze**
+
+- GitHub: [@githubhandle](https://github.com/githubhandle)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p> top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[new_feature_1]**
+- [ ] **[new_feature_2]**
+- [ ] **[new_feature_3]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -94,3 +121,10 @@ If you like this project stars the repo.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+> Give credit to everyone who inspired your codebase.
+> I would like to thank...shayan my czn
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
