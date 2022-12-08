@@ -209,8 +209,8 @@ main {
 }
 
 .project-view-button {
-  width: 12vh;
-  height: 4vh;
+  width: 18vh;
+  padding: 5px;
   background: none;
   border-radius: 10px;
   border: 1px solid rgb(68, 68, 255);
@@ -276,18 +276,18 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 20vh;
+  width: 24vh;
   margin-top: 2%;
   list-style: none;
   padding: 0;
 }
 
 .section3-resume-btn {
-  width: 17vh;
-  height: 5%;
+  width: 22vh;
+  padding: 5px;
   margin-left: 3%;
   margin-top: 1%;
-  font-size: 17px;
+  font-size: 16px;
   font-family: "Poppins", sans-serif;
   background: none;
   border-radius: 8px;
@@ -325,6 +325,7 @@ main {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.028);
   margin-top: 1%;
+  padding-left: 10px;
 }
 
 .languages-text {
@@ -382,6 +383,7 @@ main {
   width: 100%;
   border-top-left-radius: 100px;
   position: relative;
+  height: 550px;
 }
 
 .footer-background-ul {
@@ -392,11 +394,10 @@ main {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  z-index: 0;
 }
 
 .footer-background-img {
-  height: 550px;
+  height: 500px;
 }
 
 .contact-title {
@@ -444,15 +445,15 @@ main {
 }
 
 .form-button {
-  width: 16vh;
-  height: 5vh;
+  width: 20vh;
+  padding: 10px;
   margin-top: 15px;
   border-radius: 8px;
   border: none;
-  color: #6070ff;
+  color: #6070fff1;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 17px;
+  font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
   background-color: white;
 }
@@ -476,11 +477,11 @@ main {
 }
 
 .end-line {
-  margin-top: 40px;
+  margin-top: 540px;
   width: 40%;
-  margin-bottom: 8px;
   height: 4px;
   background-color: black;
   border: none;
   border-radius: 5px;
+  position: absolute;
 }
