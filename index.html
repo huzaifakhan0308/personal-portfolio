@@ -17,12 +17,24 @@
         <a href="#" class="menuicon-a">
             <img src="assets/icons/menuIcon.png" alt="menu-icon">
         </a>
+        <ul class="toolbar-ul">
+            <li>Portfolio</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
     </header>
     <main>
         <!-- section1 -->
         <section class="headline-section">
-            <img class="background-img-section1" src="assets/images/header-shapes mobile.svg"
-                alt="background-img-section1">
+            <ul class="healine-section-background-img-ul">
+                <li>
+                    <img class="background-img-section1-for-mobile" src="assets/images/header-shapes mobile.svg"
+                    alt="background-img-section1">
+                </li>
+                <li>
+                    <img class="background-img-section1-for-desktop" src="assets/images/Header bg.svg" alt="">
+                </li>
+            </ul>
             <div class="aboutme-div">
                 <h1 class="me">I’m huzaifa <br />Glad to see you!</h1>
                 <p class="about-me">
@@ -65,7 +77,7 @@
         <section class="Works-section">
             <!-- artical1 -->
             <article class="project1">
-                <img class="myproject-img-project" src="assets/images/project1 img.svg" alt="Portfolio-project-img">
+                <img class="myprojects-img" src="assets/images/project1 img.svg" alt="Portfolio-project-img">
                 <div class="info-div-project">
                     <h2 class="project-title">Tonic</h2>
                     <ul class="project-info">
@@ -89,7 +101,7 @@
             </article>
             <!-- artical2 -->
             <article class="projects">
-                <img class="myproject-img-project" src="assets/images/project2 img.svg" alt="Portfolio-project-img">
+                <img class="myprojects-img-mobile" src="assets/images/project2 img.svg" alt="Portfolio-project-img">
                 <div class="info-div-project">
                     <h2 class="project-title">Tonic</h2>
                     <ul class="project-info">
@@ -110,10 +122,11 @@
                         See Project
                     </button>
                 </div>
+                <img class="myprojects-img-desktop" src="assets/images/project2 img.svg" alt="Portfolio-project-img">
             </article>
             <!-- artical3 -->
             <article class="projects">
-                <img class="myproject-img-project" src="assets/images/project3 img.svg" alt="Portfolio-project-img">
+                <img class="myprojects-img" src="assets/images/project3 img.svg" alt="Portfolio-project-img">
                 <div class="info-div-project">
                     <h2 class="project-title">Tonic</h2>
                     <ul class="project-info">
@@ -137,7 +150,7 @@
             </article>
             <!-- artical4 -->
             <article class="projects">
-                <img class="myproject-img-project" src="assets/images/project4 img.svg" alt="Portfolio-project-img">
+                <img class="myprojects-img-mobile" src="assets/images/project4 img.svg" alt="Portfolio-project-img">
                 <div class="info-div-project">
                     <h2 class="project-title">Tonic</h2>
                     <ul class="project-info">
@@ -158,12 +171,13 @@
                         See Project
                     </button>
                 </div>
+                <img class="myprojects-img-desktop" src="assets/images/project4 img.svg" alt="Portfolio-project-img">
             </article>
         </section>
         <!-- section3 -->
         <section class="about-me-section-container">
-            <h2 class="aboutmyself">About <br>Myself</h2>
             <div class="aboutme-div-section3">
+                <h2 class="aboutmyself">About <br>Myself</h2>
                 <p class="about-me-section3">
                     I’m a software developer! I can help you build a product , feature
                     or website Look through some of my work and experience! If you like
@@ -198,37 +212,37 @@
                         </a>
                     </li>
                 </ul>
+                <button class="section3-resume-btn">Get my resume</button>
             </div>
-            <button class="section3-resume-btn">Get my resume</button>
             <div class="languages-div">
                 <ul class="languages-title-ul">
-                    <h1 class="languages-title">languages</h1>
+                    <h1 class="languages-title">Languages</h1>
                     <li>
                         <img class="arrow-down-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
                     </li>
                 </ul>
-                <ul>
-                    <li class="languages-li">
+                <ul class="languages-ul-section3">
+                    <li class="languages-li js-li">
                         <img class="jslogo" src="assets/icons/js logo.svg" alt="javaScript-logo">
                         <span class="languages-text">JavaScript</span>
                     </li>
-                    <li class="languages-li">
+                    <li class="languages-li html-css-li">
                         <img class="htmllogo" src="assets/icons/html logo.svg" alt="HTML-logo">
                         <span class="languages-text">HTML</span>
                     </li>
-                    <li class="languages-li">
+                    <li class="languages-li html-css-li">
                         <img class="csslogo" src="assets/icons/css logo.svg" alt="CSS-logo">
                         <span class="languages-text">CSS</span>
                     </li>
                 </ul>
-            </div>
-            <div class="frameworks">
-                frame works
-                <img class="arrow-right1-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
-            </div>
-            <div class="skills">
-                Skills
-                <img class="arrow-right2-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
+                <div class="frameworks">
+                    frame works
+                    <img class="arrow-right1-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
+                </div>
+                <div class="skills">
+                    Skills
+                    <img class="arrow-right2-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
+                </div>
             </div>
         </section>
     </main>
@@ -237,7 +251,10 @@
 <footer class="form-section">
     <ul class="footer-background-ul">
         <li>
-            <img class="footer-background-img" src="assets/icons/contact form shapes-mobile.svg" alt="">
+            <img class="footer-background-img-mobile" src="assets/images/contact form shapes-mobile.svg" alt="">
+        </li>
+        <li>
+            <img class="footer-background-img-desktop" src="assets/images/contact form background shapes.svg" alt="">
         </li>
     </ul>
     <h1 class="contact-title">Contact me </h1>
