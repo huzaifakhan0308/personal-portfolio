@@ -31,13 +31,19 @@ main {
 
 /* for mobile */
 
-@media (max-width: 767px) {
-  .toolbar-ul {
-    display: none;
-  }
-
+@media (max-width: 768px) {
   .myLogo {
     height: 40%;
+    margin-left: 30%;
+  }
+
+  .menuicon-a {
+    display: flex;
+    margin-left: 70%;
+  }
+
+  .toolbar-ul {
+    display: none;
   }
 
   .headline-section {
@@ -48,9 +54,11 @@ main {
     height: 913px;
     width: 100%;
     position: relative;
+    border-bottom-left-radius: 100px;
+    box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.265);
   }
 
-  .healine-section-background-img-ul {
+  .headline-section-background-img-ul {
     list-style: none;
     border-radius: 10px;
     width: 100%;
@@ -61,7 +69,9 @@ main {
   }
 
   .background-img-section1-for-mobile {
+    display: flex;
     width: 100%;
+    height: 913px;
   }
 
   .background-img-section1-for-desktop {
@@ -74,12 +84,13 @@ main {
 
   .me {
     font-size: 60px;
+    color: #091e42;
     font-family: "Poppins", sans-serif;
   }
 
   .about-me {
     font-size: 20px;
-    color: #344563;
+    color: #172b4d;
     margin: 12px 0;
     font-family: "Poppins", sans-serif;
   }
@@ -110,20 +121,6 @@ main {
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin-top: 6%;
-  }
-
-  .project-description {
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .project1 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .projects {
@@ -140,6 +137,12 @@ main {
     padding: 2%;
   }
 
+  .myprojects-img-mobile {
+    display: flex;
+    width: 100%;
+    padding: 2%;
+  }
+
   .myprojects-img-desktop {
     display: none;
   }
@@ -149,35 +152,67 @@ main {
   }
 
   .project-title {
-    font-size: 30px;
+    width: 250px;
+    height: 36px;
     font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
   }
 
   .project-info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    padding: 0;
+    margin-top: 2vh;
+    width: 35vh;
   }
 
   .canopy {
-    font-size: 15px;
+    width: 55px;
+    height: 16px;
     font-family: "Poppins", sans-serif;
-    color: rgba(0, 0, 0, 0.797);
-    margin-left: -4vh;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
   }
 
   .back-end-dev {
+    width: 88px;
+    height: 16px;
     font-family: "Poppins", sans-serif;
-    margin-left: 10%;
-    color: rgba(0, 0, 0, 0.57);
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
   }
 
   .two015 {
+    width: 29px;
+    height: 16px;
     font-family: "Poppins", sans-serif;
-    margin-left: 10%;
-    color: rgba(0, 0, 0, 0.57);
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .project-description {
+    width: 250px;
+    height: 76px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    color: #344563;
   }
 
   .project-languages-ul {
@@ -235,7 +270,7 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 5%;
     height: 1100px;
-    border-top-right-radius: 200px;
+    border-top-right-radius: 100px;
   }
 
   .aboutmyself {
@@ -243,6 +278,7 @@ main {
     margin-left: 3%;
     font-size: 50px;
     font-family: "Poppins", sans-serif;
+    color: #172b4d;
   }
 
   .aboutme-div-section3 {
@@ -328,12 +364,11 @@ main {
   .frameworks {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dfe1e6;
     margin-top: 3%;
     padding-bottom: 1vh;
     font-family: "Poppins", sans-serif;
     font-size: larger;
-    font-weight: bold;
     width: 95%;
     margin-left: 2%;
     padding-left: 2vh;
@@ -343,12 +378,11 @@ main {
   .skills {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dfe1e6;
     margin-top: 3%;
     padding-bottom: 1vh;
     font-family: "Poppins", sans-serif;
     font-size: larger;
-    font-weight: bold;
     width: 95%;
     margin-left: 2%;
     padding-left: 2vh;
@@ -389,6 +423,7 @@ main {
   }
 
   .footer-background-img-mobile {
+    display: flex;
     height: 500px;
   }
 
@@ -411,6 +446,7 @@ main {
     text-align: center;
     color: white;
     font-family: "Poppins", sans-serif;
+    width: 310px;
   }
 
   .form-container {
@@ -473,6 +509,7 @@ main {
   }
 
   .end-line {
+    display: flex;
     margin-top: 540px;
     width: 40%;
     height: 4px;
@@ -517,9 +554,10 @@ main {
     box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.265);
   }
 
-  .healine-section-background-img-ul {
+  .headline-section-background-img-ul {
     list-style: none;
     position: absolute;
+    z-index: -1;
   }
 
   .background-img-section1-for-mobile {
@@ -527,7 +565,9 @@ main {
   }
 
   .background-img-section1-for-desktop {
+    display: flex;
     width: 100%;
+    height: 900px;
   }
 
   .aboutme-div {
@@ -535,6 +575,7 @@ main {
   }
 
   .me {
+    color: #091e42;
     font-size: 60px;
     font-family: "Poppins", sans-serif;
   }
@@ -572,15 +613,6 @@ main {
     align-items: center;
     flex-direction: column;
     width: 80%;
-    margin-top: 2%;
-  }
-
-  .project1 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   .projects {
@@ -589,7 +621,7 @@ main {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .myprojects-img-mobile {
@@ -602,6 +634,7 @@ main {
   }
 
   .myprojects-img-desktop {
+    display: flex;
     width: 50%;
     padding: 2%;
   }
@@ -613,37 +646,56 @@ main {
   }
 
   .project-title {
-    font-size: 40px;
-    font-weight: bolder;
+    width: 260px;
+    height: 46px;
+    color: #091e42;
     font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .project-info {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    width: 45vh;
   }
 
   .canopy {
-    font-size: 20px;
+    width: 75px;
+    height: 24px;
+    color: #344563;
     font-family: "Poppins", sans-serif;
-    color: rgba(0, 0, 0, 0.797);
-    margin-left: -4vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .back-end-dev {
-    font-size: 18px;
+    width: 120px;
+    height: 24px;
+    color: #6b778c;
     font-family: "Poppins", sans-serif;
-    margin-left: 10%;
-    color: rgba(0, 0, 0, 0.57);
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .two015 {
+    width: 38px;
+    height: 24px;
+    color: #6b778c;
     font-family: "Poppins", sans-serif;
-    margin-left: 10%;
-    color: rgba(0, 0, 0, 0.57);
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
   }
 
   .project-description {
@@ -723,21 +775,36 @@ main {
   }
 
   .aboutmyself {
-    font-size: 50px;
+    width: 447px;
+    height: 114px;
     font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #091e42;
   }
 
   .about-me-section3 {
-    color: #344563;
-    margin: 12px 0;
+    width: 350px;
+    height: 102px;
     font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
   }
 
   .social-icon-header-section3 {
     color: #7f8cff;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
-    font-weight: bolder;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 50px;
   }
 
   .social-icon-container-section3 {
@@ -761,13 +828,13 @@ main {
     border-radius: 8px;
     font-weight: bold;
     color: #396df2;
-    border: 1px solid #6070ff;
+    border: 1px solid #396df2;
     cursor: pointer;
   }
 
   .section3-resume-btn:hover {
-    color: black;
-    border: 1px solid black;
+    color: white;
+    background-color: #396df2;
   }
 
   .languages-div {
@@ -775,8 +842,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-    padding-right: 15vh;
+    width: 45%;
   }
 
   .languages-title-ul {
@@ -788,9 +854,11 @@ main {
   }
 
   .languages-title {
-    font-size: xx-large;
-    font-weight: lighter;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
     font-family: "Poppins", sans-serif;
+    color: #344563;
   }
 
   .arrow-down-section3 {
@@ -800,22 +868,36 @@ main {
   .languages-ul-section3 {
     display: flex;
     flex-direction: row;
+    padding-top: 40px;
   }
 
   .languages-li {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    width: 13vh;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.028);
-    margin-top: 1%;
-    padding: 7px;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    list-style: none;
+    background: #f7f7f9;
+    border-radius: 8px;
   }
 
-  .js-li {
-    width: 14vh;
+  @media (width: 768px) {
+    .languages-li {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 105px;
+      height: 110px;
+      list-style: none;
+      background: #f7f7f9;
+      border-radius: 8px;
+    }
+  }
+
+  .languages-logo {
+    padding-top: 10px;
+    padding-left: 10px;
   }
 
   .html-css-li {
@@ -823,37 +905,42 @@ main {
   }
 
   .languages-text {
+    padding-top: 10px;
+    padding-left: 10px;
     font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
   }
 
   .frameworks {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dfe1e6;
     margin-top: 3%;
     padding-bottom: 1vh;
     font-family: "Poppins", sans-serif;
     font-size: larger;
-    font-weight: bold;
     width: 95%;
     margin-left: 2%;
     padding-left: 2vh;
     position: relative;
+    font-weight: 500;
   }
 
   .skills {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #dfe1e6;
     margin-top: 3%;
     padding-bottom: 1vh;
     font-family: "Poppins", sans-serif;
     font-size: larger;
-    font-weight: bold;
     width: 95%;
     margin-left: 2%;
     padding-left: 2vh;
     position: relative;
+    font-weight: 500;
   }
 
   .arrow-right1-section3 {
@@ -872,11 +959,24 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6955ff;
+    background: #6070ff;
     width: 100%;
     border-top-left-radius: 100px;
     position: relative;
     height: 550px;
+  }
+
+  @media (width: 768px) {
+    .form-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: #6070ff;
+      width: 838px;
+      border-top-left-radius: 150px;
+      position: relative;
+      height: 550px;
+    }
   }
 
   .footer-background-ul {
@@ -894,6 +994,7 @@ main {
   }
 
   .footer-background-img-desktop {
+    display: flex;
     height: 500px;
     width: 100%;
   }
@@ -963,7 +1064,7 @@ main {
   }
 
   .form-button:hover {
-    border: 2px solid black;
+    border: 1px solid black;
   }
 
   .form-button:active {

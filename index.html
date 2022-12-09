@@ -17,16 +17,18 @@
         <a href="#" class="menuicon-a">
             <img src="assets/icons/menuIcon.png" alt="menu-icon">
         </a>
-        <ul class="toolbar-ul">
-            <li>Portfolio</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+        <nav>
+            <ul class="toolbar-ul">
+                <li><a href="#headline-section">Portfolio</a></li>
+                <li><a href="#about-me-section-container">About</a></li>
+                <li><a href="#form-section">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <!-- section1 -->
-        <section class="headline-section">
-            <ul class="healine-section-background-img-ul">
+        <section class="headline-section" id="headline-section">
+            <ul class="headline-section-background-img-ul">
                 <li>
                     <img class="background-img-section1-for-mobile" src="assets/images/header-shapes mobile.svg"
                     alt="background-img-section1">
@@ -76,7 +78,7 @@
         <!-- section2 -->
         <section class="Works-section">
             <!-- artical1 -->
-            <article class="project1">
+            <article class="projects">
                 <img class="myprojects-img" src="assets/images/project1 img.svg" alt="Portfolio-project-img">
                 <div class="info-div-project">
                     <h2 class="project-title">Tonic</h2>
@@ -175,9 +177,9 @@
             </article>
         </section>
         <!-- section3 -->
-        <section class="about-me-section-container">
+        <section class="about-me-section-container" id="about-me-section-container">
             <div class="aboutme-div-section3">
-                <h2 class="aboutmyself">About <br>Myself</h2>
+                <header class="aboutmyself">About <br>Myself</header>
                 <p class="about-me-section3">
                     I’m a software developer! I can help you build a product , feature
                     or website Look through some of my work and experience! If you like
@@ -222,21 +224,21 @@
                     </li>
                 </ul>
                 <ul class="languages-ul-section3">
-                    <li class="languages-li js-li">
-                        <img class="jslogo" src="assets/icons/js logo.svg" alt="javaScript-logo">
+                    <li class="languages-li">
+                        <img class="languages-logo" src="assets/icons/js logo.svg" alt="javaScript-logo">
                         <span class="languages-text">JavaScript</span>
                     </li>
                     <li class="languages-li html-css-li">
-                        <img class="htmllogo" src="assets/icons/html logo.svg" alt="HTML-logo">
+                        <img class="languages-logo" src="assets/icons/html logo.svg" alt="HTML-logo">
                         <span class="languages-text">HTML</span>
                     </li>
                     <li class="languages-li html-css-li">
-                        <img class="csslogo" src="assets/icons/css logo.svg" alt="CSS-logo">
+                        <img class="languages-logo" src="assets/icons/css logo.svg" alt="CSS-logo">
                         <span class="languages-text">CSS</span>
                     </li>
                 </ul>
                 <div class="frameworks">
-                    frame works
+                    Frameworks
                     <img class="arrow-right1-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
                 </div>
                 <div class="skills">
@@ -248,7 +250,7 @@
     </main>
 </body>
 <!-- footer -->
-<footer class="form-section">
+<footer class="form-section" id="form-section">
     <ul class="footer-background-ul">
         <li>
             <img class="footer-background-img-mobile" src="assets/images/contact form shapes-mobile.svg" alt="">
