@@ -633,6 +633,11 @@ main {
     padding: 2%;
   }
 
+  .myprojects-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+  }
+
   .myprojects-img-desktop {
     display: flex;
     width: 50%;
