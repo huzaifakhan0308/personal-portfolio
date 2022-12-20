@@ -25,7 +25,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built-with **html** **css** and **JavaScript**.
+> This project is built-with **html** and **css**.
 
 <!-- Features -->
 
@@ -84,17 +84,9 @@ npm run hint
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
-👤 **Wai Yan Phyo**
+👤 **Henry Odongo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-👤 **aubin simpeze**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/Odongo006)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
