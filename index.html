@@ -10,11 +10,21 @@
 </head>
 
 <body>
+    <!-- mobile menu -->
+    <div class="mobile-menu">
+        <button class="mobile-menu-disappear-button" >x</button>
+        <div class="mobile-menu-tags-div">
+            <a class="mobile-menu-tags" href="#headline-section">Portfolio</a>
+            <a class="mobile-menu-tags" href="#about-me-section-container">About</a>
+            <a class="mobile-menu-tags" href="#form-section">Contact</a>
+        </div>
+    </div>
+    <!-- header -->
     <header class="toolbar">
         <a href="#">
             <img class="myLogo" src="assets/icons/My Logo.png" alt="logo">
         </a>
-        <a href="#" class="menuicon-a">
+        <a href="#" class="menuicon-a" onclick="mobileMenuButton()">
             <img src="assets/icons/menuIcon.png" alt="menu-icon">
         </a>
         <nav>
@@ -27,7 +37,9 @@
     </header>
     <main>
         <!-- section1 -->
+
         <section class="headline-section" id="headline-section">
+            
             <ul class="headline-section-background-img-ul">
                 <li>
                     <img class="background-img-section1-for-mobile" src="assets/images/header-shapes mobile.svg"
@@ -74,6 +86,7 @@
                     </li>
                 </ul>
             </div>
+            
         </section>
         <!-- section2 -->
         <section class="Works-section">
@@ -248,6 +261,7 @@
             </div>
         </section>
     </main>
+    <script src="index.js"></script>
 </body>
 <!-- footer -->
 <footer class="form-section" id="form-section">

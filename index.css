@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Combo&family=Poppins&display=swap");
 
 * {
-  margin: 0%;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
@@ -25,21 +25,66 @@ main {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 5%;
-  padding: 15px;
+  height: 8vh;
 }
 
 /* for mobile */
 
 @media (max-width: 768px) {
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    background: #3e52ffdf;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .mobile-menu-appear {
+    display: flex;
+  }
+
+  .mobile-menu-disappear-button {
+    margin: 10% 10% 0 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+  }
+
+  .mobile-menu-tags-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10%;
+    width: 100%;
+    margin-top: 5vh;
+    font-weight: 600;
+    font-size: 32px;
+  }
+
+  .mobile-menu-tags {
+    text-decoration: none;
+    margin-top: 2vh;
+    color: white;
+  }
+
   .myLogo {
-    height: 40%;
-    margin-left: 30%;
+    display: flex;
+    padding-left: 30px;
   }
 
   .menuicon-a {
     display: flex;
-    margin-left: 70%;
+    padding-left: 55%;
+  }
+
+  .menu-icon-disappear {
+    display: none;
   }
 
   .toolbar-ul {
@@ -169,7 +214,6 @@ main {
     flex-direction: row;
     padding: 0;
     margin-top: 2vh;
-    width: 35vh;
   }
 
   .canopy {
@@ -405,11 +449,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6955ff;
+    background: #6070ff;
     width: 100%;
     border-top-left-radius: 100px;
     position: relative;
-    height: 550px;
   }
 
   .footer-background-ul {
@@ -510,13 +553,13 @@ main {
 
   .end-line {
     display: flex;
-    margin-top: 540px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 40%;
     height: 4px;
     background-color: black;
     border: none;
     border-radius: 5px;
-    position: absolute;
   }
 }
 
@@ -525,7 +568,7 @@ main {
 @media (min-width: 768px) {
   .myLogo {
     height: 40%;
-    margin-left: 20vh;
+    margin-left: 10vh;
   }
 
   .toolbar-ul {
@@ -539,6 +582,10 @@ main {
   }
 
   .menuicon-a {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
@@ -980,7 +1027,7 @@ main {
       width: 838px;
       border-top-left-radius: 150px;
       position: relative;
-      height: 550px;
+      height: 570px;
     }
   }
 
