@@ -42,6 +42,10 @@ main {
     position: absolute;
   }
 
+  .mobile-menu-appear {
+    display: flex;
+  }
+
   .mobile-menu-disappear-button {
     margin: 10% 10% 0 0;
     background: none;
@@ -77,6 +81,10 @@ main {
   .menuicon-a {
     display: flex;
     padding-left: 55%;
+  }
+
+  .menu-icon-disappear {
+    display: none;
   }
 
   .toolbar-ul {
@@ -441,7 +449,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #6955ff;
+    background: #6070ff;
     width: 100%;
     border-top-left-radius: 100px;
     position: relative;

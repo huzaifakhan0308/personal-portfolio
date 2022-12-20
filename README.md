@@ -25,7 +25,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This project is built-with **html** and **css**.
+> This project is built-with **html** **css** and **JavaScript**.
 
 <!-- Features -->
 

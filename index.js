@@ -1,22 +1,18 @@
-const mobileMenuIcon = document.querySelector('.menuicon-a');
-
+/* eslint-disable no-unused-vars */
+const menuIcon = document.querySelector('.menuicon-a');
 const mobileMenu = document.querySelector('.mobile-menu');
 
 function mobileMenuButton() {
-  mobileMenuIcon.style.display = 'none';
-  mobileMenu.style.display = 'flex';
-}
-mobileMenuButton();
-
-function mobileMenuTags() {
-  mobileMenu.style.display = 'none';
-  mobileMenuIcon.style.display = 'flex';
+  menuIcon.classList.add('menu-icon-disappear');
+  mobileMenu.classList.add('mobile-menu-appear');
 }
 
-mobileMenuTags();
-
-function menuDisapperButton() {
-  mobileMenu.style.display = 'none';
-  mobileMenuIcon.style.display = 'flex';
-}
-menuDisapperButton();
+mobileMenu.addEventListener('click', ((e) => {
+  if (e.target.classList[0] === 'mobile-menu-disappear-button') {
+    menuIcon.classList.remove('menu-icon-disappear');
+    mobileMenu.classList.remove('mobile-menu-appear');
+  } else if (e.target.classList[0] === 'mobile-menu-tags') {
+    menuIcon.classList.remove('menu-icon-disappear');
+    mobileMenu.classList.remove('mobile-menu-appear');
+  }
+}));
