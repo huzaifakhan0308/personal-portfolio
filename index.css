@@ -109,32 +109,18 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
     position: absolute;
     z-index: 2;
     background: #c1c7d0ce;
   }
 
   .popups-container {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 13% 55%;
-    height: 95%;
+    display: flex;
+    flex-direction: column;
     width: 85%;
     border-radius: 10px;
     background-color: white;
-  }
-
-  @media (max-width: 500px) {
-    .popups-container {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 13% 30%;
-      width: 85%;
-      height: 95%;
-      border-radius: 10px;
-      background-color: white;
-    }
+    margin: 30px 0 30px 0;
   }
 
   .popups-projectTitle-and-button {
@@ -199,14 +185,11 @@ main {
   }
 
   .popups-project-img {
-    grid-area: 2;
-    height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 10px 30px 10px 30px;
   }
 
   .popups-project-info {
-    grid-area: 3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -273,9 +256,10 @@ main {
   .popups-project-buttons-div {
     border-top: 1px solid #ebecf0;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
   }
 
@@ -283,8 +267,8 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
-    height: 40px;
+    width: 110px;
+    height: 35px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #396df2;
@@ -292,37 +276,24 @@ main {
     background-color: white;
     font-size: 12px;
     cursor: pointer;
-  }
-
-  @media (min-width: 500px) {
-    .popups-project-buttons-div {
-      border-top: 1px solid #ebecf0;
-      display: flex;
-      justify-content: space-around;
-      align-items: flex-start;
-      padding: 0;
-      width: 100%;
-    }
-
-    .popups-button-see {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 30%;
-      height: 40px;
-      padding: 5px;
-      border-radius: 5px;
-      border: 1px solid #396df2;
-      color: #396df2;
-      background-color: white;
-      font-size: 12px;
-      cursor: pointer;
-    }
+    margin-left: 2.5vh;
   }
 
   .popups-button-see:hover {
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
+  }
+
+  .popups-endline-mobile {
+    display: flex;
+    align-self: end;
+    width: 40%;
+    height: 4px;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: absolute;
   }
 
   /* header */
@@ -517,7 +488,8 @@ main {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 0%;
+    padding: 0;
+    margin-top: 40px;
   }
 
   .project-languages-html {
@@ -551,10 +523,10 @@ main {
     width: 15vh;
     padding: 5px;
     background: none;
-    border-radius: 10px;
+    border-radius: 6px;
     border: 1px solid rgb(68, 68, 255);
     color: #396df2;
-    font-size: 18px;
+    font-size: 15px;
     margin-top: 2vh;
     margin-bottom: 2vh;
   }
@@ -837,25 +809,22 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
     position: absolute;
     z-index: 2;
     background: #c1c7d0ce;
   }
 
   .popups-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 13% 55%;
-    height: 95%;
+    display: flex;
+    flex-direction: column;
     width: 85%;
     border-radius: 10px;
     background-color: white;
+    margin: 40px 0 40px 0;
   }
 
   .popups-projectTitle-and-button {
     display: flex;
-    grid-area: 1;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -913,14 +882,11 @@ main {
   }
 
   .popups-project-img {
-    grid-area: 2;
-    height: 100%;
     width: 100%;
-    padding: 15px;
+    padding: 10px 50px 10px 50px;
   }
 
   .popups-project-info {
-    grid-area: 3;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -938,16 +904,16 @@ main {
   }
 
   .popups-languages-buttons-container {
-    width: 35%;
-    height: 100%;
+    width: 34vh;
+    height: 30vh;
   }
 
   .popups-project-languages-ul {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    width: 35vh;
+    width: 100%;
     height: 12vh;
     padding: 0;
     padding-bottom: 15px;
@@ -977,21 +943,27 @@ main {
     width: 70px;
   }
 
+  .bootstrap-language-disappear {
+    display: none;
+  }
+
+  .ruby-language-disappear {
+    display: none;
+  }
+
   .popups-project-buttons-div {
     border-top: 1px solid rgba(0, 0, 0, 0.343);
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: center;
     padding-top: 30px;
-    width: 100%;
-    height: 66%;
   }
 
   .popups-button-see {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 45%;
+    width: 110px;
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #396df2;
@@ -999,11 +971,16 @@ main {
     background-color: white;
     font-size: 12px;
     cursor: pointer;
+    margin-left: 1vh;
   }
 
   .popups-button-see:hover {
     transform: scale(1.1);
     transition: 0.5s ease-in-out;
+  }
+
+  .popups-endline-mobile {
+    display: none;
   }
 
   /* header */
