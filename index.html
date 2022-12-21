@@ -1,289 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-page</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <!-- mobile menu -->
     <div class="mobile-menu">
-        <button class="mobile-menu-disappear-button" >x</button>
-        <div class="mobile-menu-tags-div">
-            <a class="mobile-menu-tags" href="#headline-section">Portfolio</a>
-            <a class="mobile-menu-tags" href="#about-me-section-container">About</a>
-            <a class="mobile-menu-tags" href="#form-section">Contact</a>
+      <button type="button" class="mobile-menu-disappear-button">x</button>
+      <div class="mobile-menu-tags-div">
+        <a class="mobile-menu-tags" href="#headline-section">Portfolio</a>
+        <a class="mobile-menu-tags" href="#about-me-section-container">About</a>
+        <a class="mobile-menu-tags" href="#form-section">Contact</a>
+      </div>
+      <div class="mobile-menu-endline-div">
+        <hr class="mobile-menu-endline" />
+      </div>
+    </div>
+    <!-- popups for destop and mobile version -->
+    <div class="popups" id="popups">
+      <div class="popups-container">
+        <div class="popups-projectTitle-and-button">
+          <div class="">
+            <h2 class="popup-project-title"></h2>
+            <ul class="popup-project-info">
+              <h1 class="popup-canopy">CANOPY</h1>
+              <li class="popup-back-end-dev">Back End Dev</li>
+              <li class="popup-two015">2015</li>
+            </ul>
+          </div>
+          <button type="button"
+            class="popups-project-disapper-button"
+            onclick="popupsDisappearButton()"
+          >
+            x
+          </button>
         </div>
+        <img src="" alt="" class="popups-project-img" />
+        <div class="popups-project-info">
+          <p class="popups-project-p-desktop">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            repellendus mollitia saepe maxime, vitae nostrum repellat eligendi
+            amet voluptas modi repudiandae necessitatibus animi harum obcaecati
+            at omnis laboriosam sapiente eum rem velit molestias, architecto
+            iusto! Maiores nam mollitia aliquid nesciunt!
+          </p>
+          <p class="popups-project-p-mobile">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            repellendus mollitia saepe maxime, vitae nostrum repellat eligendi
+            amet voluptas modi repudiandae necessitatibus animi harum obcaecati
+            at omnis laboriosam sapiente eum rem velit molestias,
+          </p>
+          <div class="popups-languages-buttons-container">
+            <ul class="popups-project-languages-ul">
+              <li class="popups-project-languages">html</li>
+              <li class="popups-project-languages">css</li>
+              <li class="popups-project-languages js-language">javaScript</li>
+              <li class="popups-project-languages github-language">Github</li>
+              <li class="popups-project-languages bootstrap-language">
+                Bootstrap
+              </li>
+              <li class="popups-project-languages ruby-language">Ruby</li>
+            </ul>
+            <div class="popups-project-buttons-div">
+              <button type="button" class="popups-button-see">
+                See live <img src="assets/icons/btn arrow popup.svg" alt="" />
+              </button>
+              <button type="button" class="popups-button-see">
+                See Source <img src="assets/icons/btn logo popup.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="popups-endline-mobile" />
     </div>
     <!-- header -->
     <header class="toolbar">
-        <a href="#">
-            <img class="myLogo" src="assets/icons/My Logo.png" alt="logo">
-        </a>
-        <a href="#" class="menuicon-a" onclick="mobileMenuButton()">
-            <img src="assets/icons/menuIcon.png" alt="menu-icon">
-        </a>
-        <nav>
-            <ul class="toolbar-ul">
-                <li><a href="#headline-section">Portfolio</a></li>
-                <li><a href="#about-me-section-container">About</a></li>
-                <li><a href="#form-section">Contact</a></li>
-            </ul>
-        </nav>
+      <a href="#">
+        <img class="myLogo" src="assets/icons/My Logo.png" alt="logo" />
+      </a>
+      <a href="#" class="menuicon-a" onclick="mobileMenuButton()">
+        <img src="assets/icons/menuIcon.png" alt="menu-icon" />
+      </a>
+      <nav>
+        <ul class="toolbar-ul">
+          <li><a href="#headline-section">Portfolio</a></li>
+          <li><a href="#about-me-section-container">About</a></li>
+          <li><a href="#form-section">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- section1 -->
+      <!-- section1 -->
 
-        <section class="headline-section" id="headline-section">
-            
-            <ul class="headline-section-background-img-ul">
-                <li>
-                    <img class="background-img-section1-for-mobile" src="assets/images/header-shapes mobile.svg"
-                    alt="background-img-section1">
-                </li>
-                <li>
-                    <img class="background-img-section1-for-desktop" src="assets/images/Header bg.svg" alt="">
-                </li>
+      <section class="headline-section" id="headline-section">
+        <ul class="headline-section-background-img-ul">
+          <li>
+            <img
+              class="background-img-section1-for-mobile"
+              src="assets/images/header-shapes mobile.svg"
+              alt="background-img-section1"
+            />
+          </li>
+          <li>
+            <img
+              class="background-img-section1-for-desktop"
+              src="assets/images/Header bg.svg"
+              alt=""
+            />
+          </li>
+        </ul>
+        <div class="aboutme-div">
+          <h1 class="me">I’m huzaifa <br />Glad to see you!</h1>
+          <p class="about-me">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <h5 class="social-icon-header">LET’S CONNECT</h5>
+          <ul class="social-icon-container">
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector.svg" alt="twitter-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Linkedin icon.svg" alt="Linkedin-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector1.svg" alt="medium-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector2.svg" alt="github-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector3.svg" alt="angel-list-icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- section2 -->
+      <section class="Works-section">
+        <!-- artical1 -->
+        <article class="projects">
+          <img
+            class="myprojects-img"
+            src="assets/images/project1 img.svg"
+            alt="Portfolio-project-img"
+          />
+          <div class="info-div-project">
+            <h2 class="project-title">Tonic</h2>
+            <ul class="project-info">
+              <h1 class="canopy">CANOPY</h1>
+              <li class="back-end-dev">Back End Dev</li>
+              <li class="two015">2015</li>
             </ul>
-            <div class="aboutme-div">
-                <h1 class="me">I’m huzaifa <br />Glad to see you!</h1>
-                <p class="about-me">
-                    I’m a software developer! I can help you build a product , feature
-                    or website Look through some of my work and experience! If you like
-                    what you see and have a project you need coded, don’t hestiate to
-                    contact me.
-                </p>
-                <h5 class="social-icon-header">LET’S CONNECT</h5>
-                <ul class="social-icon-container">
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector.svg" alt="twitter-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Linkedin icon.svg" alt="Linkedin-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector1.svg" alt="medium-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector2.svg" alt="github-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector3.svg" alt="angel-list-icon">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            
-        </section>
-        <!-- section2 -->
-        <section class="Works-section">
-            <!-- artical1 -->
-            <article class="projects">
-                <img class="myprojects-img" src="assets/images/project1 img.svg" alt="Portfolio-project-img">
-                <div class="info-div-project">
-                    <h2 class="project-title">Tonic</h2>
-                    <ul class="project-info">
-                        <h1 class="canopy">CANOPY</h1>
-                        <li class="back-end-dev">Back End Dev</li>
-                        <li class="two015">2015</li>
-                    </ul>
-                    <p class="project-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required.
-                    </p>
-                    <ul class="project-languages-ul">
-                        <li class="project-languages-html">html</li>
-                        <li class="project-languages">css</li>
-                        <li class="project-languages">javaScript</li>
-                    </ul>
-                    <button class="project-view-button" type="button">
-                        See Project
-                    </button>
-                </div>
-            </article>
-            <!-- artical2 -->
-            <article class="projects">
-                <img class="myprojects-img-mobile" src="assets/images/project2 img.svg" alt="Portfolio-project-img">
-                <div class="info-div-project">
-                    <h2 class="project-title">Tonic</h2>
-                    <ul class="project-info">
-                        <h1 class="canopy">CANOPY</h1>
-                        <li class="back-end-dev">Back End Dev</li>
-                        <li class="two015">2015</li>
-                    </ul>
-                    <p class="project-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required.
-                    </p>
-                    <ul class="project-languages-ul">
-                        <li class="project-languages-html">html</li>
-                        <li class="project-languages">css</li>
-                        <li class="project-languages">javaScript</li>
-                    </ul>
-                    <button class="project-view-button" type="button">
-                        See Project
-                    </button>
-                </div>
-                <img class="myprojects-img-desktop" src="assets/images/project2 img.svg" alt="Portfolio-project-img">
-            </article>
-            <!-- artical3 -->
-            <article class="projects">
-                <img class="myprojects-img" src="assets/images/project3 img.svg" alt="Portfolio-project-img">
-                <div class="info-div-project">
-                    <h2 class="project-title">Tonic</h2>
-                    <ul class="project-info">
-                        <h1 class="canopy">CANOPY</h1>
-                        <li class="back-end-dev">Back End Dev</li>
-                        <li class="two015">2015</li>
-                    </ul>
-                    <p class="project-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required.
-                    </p>
-                    <ul class="project-languages-ul">
-                        <li class="project-languages-html">html</li>
-                        <li class="project-languages">css</li>
-                        <li class="project-languages">javaScript</li>
-                    </ul>
-                    <button class="project-view-button" type="button">
-                        See Project
-                    </button>
-                </div>
-            </article>
-            <!-- artical4 -->
-            <article class="projects">
-                <img class="myprojects-img-mobile" src="assets/images/project4 img.svg" alt="Portfolio-project-img">
-                <div class="info-div-project">
-                    <h2 class="project-title">Tonic</h2>
-                    <ul class="project-info">
-                        <h1 class="canopy">CANOPY</h1>
-                        <li class="back-end-dev">Back End Dev</li>
-                        <li class="two015">2015</li>
-                    </ul>
-                    <p class="project-description">
-                        A daily selection of privately personalized reads; no accounts or
-                        sign-ups required.
-                    </p>
-                    <ul class="project-languages-ul">
-                        <li class="project-languages-html">html</li>
-                        <li class="project-languages">css</li>
-                        <li class="project-languages">javaScript</li>
-                    </ul>
-                    <button class="project-view-button" type="button">
-                        See Project
-                    </button>
-                </div>
-                <img class="myprojects-img-desktop" src="assets/images/project4 img.svg" alt="Portfolio-project-img">
-            </article>
-        </section>
-        <!-- section3 -->
-        <section class="about-me-section-container" id="about-me-section-container">
-            <div class="aboutme-div-section3">
-                <header class="aboutmyself">About <br>Myself</header>
-                <p class="about-me-section3">
-                    I’m a software developer! I can help you build a product , feature
-                    or website Look through some of my work and experience! If you like
-                    what you see and have a project you need coded, don’t hestiate to
-                    contact me.
-                </p>
-                <h5 class="social-icon-header-section3">LET’S CONNECT</h5>
-                <ul class="social-icon-container-section3">
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector.svg" alt="twitter-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Linkedin icon.svg" alt="Linkedin-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector1.svg" alt="medium-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector2.svg" alt="github-icon">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/icons/Vector3.svg" alt="angel-list-icon">
-                        </a>
-                    </li>
-                </ul>
-                <button class="section3-resume-btn">Get my resume</button>
-            </div>
-            <div class="languages-div">
-                <ul class="languages-title-ul">
-                    <h1 class="languages-title">Languages</h1>
-                    <li>
-                        <img class="arrow-down-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
-                    </li>
-                </ul>
-                <ul class="languages-ul-section3">
-                    <li class="languages-li">
-                        <img class="languages-logo" src="assets/icons/js logo.svg" alt="javaScript-logo">
-                        <span class="languages-text">JavaScript</span>
-                    </li>
-                    <li class="languages-li html-css-li">
-                        <img class="languages-logo" src="assets/icons/html logo.svg" alt="HTML-logo">
-                        <span class="languages-text">HTML</span>
-                    </li>
-                    <li class="languages-li html-css-li">
-                        <img class="languages-logo" src="assets/icons/css logo.svg" alt="CSS-logo">
-                        <span class="languages-text">CSS</span>
-                    </li>
-                </ul>
-                <div class="frameworks">
-                    Frameworks
-                    <img class="arrow-right1-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
-                </div>
-                <div class="skills">
-                    Skills
-                    <img class="arrow-right2-section3" src="assets/icons/arrow-right.svg" alt="arrow-logo">
-                </div>
-            </div>
-        </section>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-languages-ul">
+              <li class="project-languages-html">html</li>
+              <li class="project-languages">css</li>
+              <li class="project-languages">javaScript</li>
+            </ul>
+            <a href="#popups" class="project-view-button-tag">
+              <button
+                class="project-view-button"
+                type="button"
+                onclick="projectViewButton1()"
+              >
+                See Project
+              </button>
+            </a>
+          </div>
+        </article>
+        <!-- artical2 -->
+        <article class="projects">
+          <img
+            class="myprojects-img-mobile"
+            src="assets/images/project2 img.svg"
+            alt="Portfolio-project-img"
+          />
+          <div class="info-div-project">
+            <h2 class="project-title">Multi-Post</h2>
+            <ul class="project-info">
+              <h1 class="canopy">CANOPY</h1>
+              <li class="back-end-dev">Back End Dev</li>
+              <li class="two015">2015</li>
+            </ul>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-languages-ul">
+              <li class="project-languages-html">html</li>
+              <li class="project-languages">css</li>
+              <li class="project-languages">javaScript</li>
+            </ul>
+            <a href="#popups" class="project-view-button-tag">
+              <button
+                class="project-view-button"
+                type="button"
+                onclick="projectViewButton2()"
+              >
+                See Project
+              </button>
+            </a>
+          </div>
+          <img
+            class="myprojects-img-desktop"
+            src="assets/images/project2 img.svg"
+            alt="Portfolio-project-img"
+          />
+        </article>
+        <!-- artical3 -->
+        <article class="projects">
+          <img
+            class="myprojects-img"
+            src="assets/images/project3 img.svg"
+            alt="Portfolio-project-img"
+          />
+          <div class="info-div-project">
+            <h2 class="project-title">Tonic</h2>
+            <ul class="project-info">
+              <h1 class="canopy">CANOPY</h1>
+              <li class="back-end-dev">Back End Dev</li>
+              <li class="two015">2015</li>
+            </ul>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-languages-ul">
+              <li class="project-languages-html">html</li>
+              <li class="project-languages">css</li>
+              <li class="project-languages">javaScript</li>
+            </ul>
+            <a href="#popups" class="project-view-button-tag">
+              <button
+                class="project-view-button"
+                type="button"
+                onclick="projectViewButton3()"
+              >
+                See Project
+              </button>
+            </a>
+          </div>
+        </article>
+        <!-- artical4 -->
+        <article class="projects">
+          <img
+            class="myprojects-img-mobile"
+            src="assets/images/project4 img.svg"
+            alt="Portfolio-project-img"
+          />
+          <div class="info-div-project">
+            <h2 class="project-title">Multi-Post</h2>
+            <ul class="project-info">
+              <h1 class="canopy">CANOPY</h1>
+              <li class="back-end-dev">Back End Dev</li>
+              <li class="two015">2015</li>
+            </ul>
+            <p class="project-description">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
+            <ul class="project-languages-ul">
+              <li class="project-languages-html">html</li>
+              <li class="project-languages">css</li>
+              <li class="project-languages">javaScript</li>
+            </ul>
+            <a href="#popups" class="project-view-button-tag">
+              <button
+                class="project-view-button"
+                type="button"
+                onclick="projectViewButton4()"
+              >
+                See Project
+              </button>
+            </a>
+          </div>
+          <img
+            class="myprojects-img-desktop"
+            src="assets/images/project4 img.svg"
+            alt="Portfolio-project-img"
+          />
+        </article>
+      </section>
+      <!-- section3 -->
+      <section
+        class="about-me-section-container"
+        id="about-me-section-container"
+      >
+        <div class="aboutme-div-section3">
+          <header class="aboutmyself">About <br />Myself</header>
+          <p class="about-me-section3">
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <h5 class="social-icon-header-section3">LET’S CONNECT</h5>
+          <ul class="social-icon-container-section3">
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector.svg" alt="twitter-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Linkedin icon.svg" alt="Linkedin-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector1.svg" alt="medium-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector2.svg" alt="github-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="assets/icons/Vector3.svg" alt="angel-list-icon" />
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="section3-resume-btn">Get my resume</button>
+        </div>
+        <div class="languages-div">
+          <ul class="languages-title-ul">
+            <h1 class="languages-title">Languages</h1>
+            <li>
+              <img
+                class="arrow-down-section3"
+                src="assets/icons/arrow-right.svg"
+                alt="arrow-logo"
+              />
+            </li>
+          </ul>
+          <ul class="languages-ul-section3">
+            <li class="languages-li">
+              <img
+                class="languages-logo"
+                src="assets/icons/js logo.svg"
+                alt="javaScript-logo"
+              />
+              <span class="languages-text">JavaScript</span>
+            </li>
+            <li class="languages-li html-css-li">
+              <img
+                class="languages-logo"
+                src="assets/icons/html logo.svg"
+                alt="HTML-logo"
+              />
+              <span class="languages-text">HTML</span>
+            </li>
+            <li class="languages-li html-css-li">
+              <img
+                class="languages-logo"
+                src="assets/icons/css logo.svg"
+                alt="CSS-logo"
+              />
+              <span class="languages-text">CSS</span>
+            </li>
+          </ul>
+          <div class="frameworks">
+            Frameworks
+            <img
+              class="arrow-right1-section3"
+              src="assets/icons/arrow-right.svg"
+              alt="arrow-logo"
+            />
+          </div>
+          <div class="skills">
+            Skills
+            <img
+              class="arrow-right2-section3"
+              src="assets/icons/arrow-right.svg"
+              alt="arrow-logo"
+            />
+          </div>
+        </div>
+      </section>
     </main>
     <script src="index.js"></script>
-</body>
-<!-- footer -->
-<footer class="form-section" id="form-section">
+  </body>
+  <!-- footer -->
+  <footer class="form-section" id="form-section">
     <ul class="footer-background-ul">
-        <li>
-            <img class="footer-background-img-mobile" src="assets/images/contact form shapes-mobile.svg" alt="">
-        </li>
-        <li>
-            <img class="footer-background-img-desktop" src="assets/images/contact form background shapes.svg" alt="">
-        </li>
+      <li>
+        <img
+          class="footer-background-img-mobile"
+          src="assets/images/contact form shapes-mobile.svg"
+          alt=""
+        />
+      </li>
+      <li>
+        <img
+          class="footer-background-img-desktop"
+          src="assets/images/contact form background shapes.svg"
+          alt=""
+        />
+      </li>
     </ul>
-    <h1 class="contact-title">Contact me </h1>
-    <p class="info-formsection">If you have an application you are interested in developing, a feature that you need
-        built or
-        a project that needs coding. I’d love to help with it </p>
-    <form action="https://formspree.io/f/mwkzgoyj" method="post" class="form-container">
-        <input type="text" name="Name" placeholder="Full name" maxlength="30" class="form-section-inputs" required>
-        <input type="email" name="Email" placeholder="Email address" class="form-section-inputs" required>
-        <textarea name="Message" cols="30" rows="6" placeholder="Write your massage here" maxlength="500"
-            class="form-section-textarea" required></textarea>
-        <button type="submit" class="form-button">Get it touch</button>
+    <h1 class="contact-title">Contact me</h1>
+    <p class="info-formsection">
+      If you have an application you are interested in developing, a feature
+      that you need built or a project that needs coding. I’d love to help with
+      it
+    </p>
+    <form
+      action="https://formspree.io/f/mwkzgoyj"
+      method="post"
+      class="form-container"
+    >
+      <input
+        type="text"
+        name="Name"
+        placeholder="Full name"
+        maxlength="30"
+        class="form-section-inputs"
+        required
+      />
+      <input
+        type="email"
+        name="Email"
+        placeholder="Email address"
+        class="form-section-inputs"
+        required
+      />
+      <textarea
+        name="Message"
+        cols="30"
+        rows="6"
+        placeholder="Write your massage here"
+        maxlength="500"
+        class="form-section-textarea"
+        required
+      ></textarea>
+      <button type="submit" class="form-button">Get it touch</button>
     </form>
-    <hr class="end-line">
-</footer>
+    <hr class="end-line" />
+  </footer>
 </html>
