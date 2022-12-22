@@ -1,6 +1,9 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable prefer-destructuring */
 /* eslint-disable no-unused-vars */
+
+// mobile menu
+
 const menuIcon = document.querySelector('.menuicon-a');
 const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -18,6 +21,8 @@ mobileMenu.addEventListener('click', ((e) => {
     mobileMenu.classList.remove('mobile-menu-appear');
   }
 }));
+
+// projects
 
 const storeData = [
   {
@@ -52,14 +57,9 @@ const storeData = [
 
 const description = document.querySelectorAll('.project-description');
 for (let i = 0; i < description.length; i += 2) {
-  description[i].innerHTML = storeData[0].description;
-  description[i + 1].innerHTML = storeData[1].description;
+  description[i].innerHTML = storeData[i].description;
+  description[i + 1].innerHTML = storeData[i + 1].description;
 }
-
-description[0].innerHTML = storeData[0].description;
-description[1].innerHTML = storeData[1].description;
-description[2].innerHTML = storeData[2].description;
-description[3].innerHTML = storeData[3].description;
 
 const projectLanguagesHtmlText = document.querySelectorAll('.project-languages-html');
 for (let i = 0; i < projectLanguagesHtmlText.length; i++) {
@@ -71,6 +71,8 @@ for (let i = 0; i < projectLanguagesText.length; i += 2) {
   projectLanguagesText[i].innerHTML = storeData[0].technologies[1];
   projectLanguagesText[i + 1].innerHTML = storeData[0].technologies[2];
 }
+
+// popups
 
 const popups = document.querySelector('.popups');
 const popupsProjectImage = document.querySelector('.popups-project-img');
@@ -114,3 +116,53 @@ function projectViewButton4() {
   popupsBootstrapLanguageDiv.classList.add('bootstrap-language-disappear');
   popupsRubyLanguageDiv.classList.add('ruby-language-disappear');
 }
+
+// form
+
+const formName = document.querySelector('.form-name');
+const formInput = document.querySelector('.form-input');
+const formText = document.querySelector('.form-section-textarea');
+const formTypeErrors = document.querySelector('.form-type-errors-disappear');
+const formError = document.querySelector('.form-error-disappear');
+const formSubmitMsg = document.querySelector('.form-submit-msg-disappear');
+
+document.querySelector('.form-section').addEventListener('click', ((e) => {
+  const formInputValue = formInput.value;
+  const formInputValue2 = formInputValue;
+  if (e.target.classList[0] === 'form-button') {
+    if (formName.value === '') {
+      formTypeErrors.innerHTML = 'please type your name!';
+      formTypeErrors.style.display = 'flex';
+      formSubmitMsg.classList.remove('form-submit-msg-appear');
+    } else if (formInput.value === '') {
+      formTypeErrors.innerHTML = 'please type your Email!';
+      formTypeErrors.style.display = 'flex';
+      formSubmitMsg.classList.remove('form-submit-msg-appear');
+    } else if (formInputValue !== formInputValue2.toLowerCase()) {
+      formSubmitMsg.classList.remove('form-submit-msg-appear');
+      formTypeErrors.style.display = 'none';
+      for (let i = 0; i < formInputValue.length; i++) {
+        if (formInputValue[i] === formInputValue2[i].toUpperCase()) {
+          formError.classList.add('form-error-appear');
+        }
+      }
+    } else if (formText.value === '') {
+      formTypeErrors.style.display = 'flex';
+      formTypeErrors.innerHTML = 'please write massage!';
+      formSubmitMsg.classList.remove('form-submit-msg-appear');
+    } else {
+      formTypeErrors.style.display = 'none';
+      formError.classList.remove('form-error-appear');
+      if (formName.value !== '' && formInput.value !== '' && formInput.value.indexOf('@') !== -1 && formText.value !== '') {
+        formSubmitMsg.classList.add('form-submit-msg-appear');
+        formName.value = '';
+        formInput.value = '';
+        formText.value = '';
+      } else {
+        formSubmitMsg.classList.remove('form-submit-msg-appear');
+        formTypeErrors.style.display = 'flex';
+        formTypeErrors.innerHTML = 'please correct your Email';
+      }
+    }
+  }
+}));

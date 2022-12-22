@@ -316,32 +316,26 @@
       </div>
     </section>
   </main>
-  <script src="index.js"></script>
 </body>
 <!-- footer -->
 <footer class="form-section" id="form-section">
-  <ul class="footer-background-ul">
-    <li>
-      <img class="footer-background-img-mobile" src="assets/images/contact form shapes-mobile.svg" alt="" />
-    </li>
-    <li>
-      <img class="footer-background-img-desktop" src="assets/images/contact form background shapes.svg" alt="" />
-    </li>
-  </ul>
   <h1 class="contact-title">Contact me</h1>
   <p class="info-formsection">
     If you have an application you are interested in developing, a feature
     that you need built or a project that needs coding. I’d love to help with
     it
   </p>
-  <form action="https://formspree.io/f/mwkzgoyj" method="post" class="form-container">
-    <input type="text" name="Name" placeholder="Full name" maxlength="30" class="form-section-inputs" required />
-    <input type="email" name="Email" placeholder="Email address" class="form-section-inputs" required />
+  <form action="" class="form-container">
+    <input type="text" name="Name" placeholder="Full name" maxlength="30" class="form-section-inputs form-name" required />
+    <input type="email" name="Email" placeholder="Email address" class="form-section-inputs form-input" required  />
     <textarea name="Message" cols="30" rows="6" placeholder="Write your massage here" maxlength="500"
-      class="form-section-textarea" required></textarea>
-    <button type="submit" class="form-button">Get it touch</button>
+    class="form-section-textarea" required></textarea>
+    <span class="form-type-errors-disappear"></span>
+    <span class="form-error-disappear">Email alphabets should be in lowerCase.</span>
+    <span class="form-submit-msg-disappear">Form sent succesfully.</span>
+    <button type="submit" class="form-button">Get in touch</button>
   </form>
   <hr class="end-line" />
 </footer>
-
+<script src="index.js"></script>
 </html>
