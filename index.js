@@ -120,49 +120,67 @@ function projectViewButton4() {
 // form
 
 const formName = document.querySelector('.form-name');
-const formInput = document.querySelector('.form-input');
+const formEmail = document.querySelector('.form-email');
 const formText = document.querySelector('.form-section-textarea');
-const formTypeErrors = document.querySelector('.form-type-errors-disappear');
 const formError = document.querySelector('.form-error-disappear');
 const formSubmitMsg = document.querySelector('.form-submit-msg-disappear');
+const formSubmitBtn = document.querySelector('.form-button');
 
 document.querySelector('.form-section').addEventListener('click', ((e) => {
-  const formInputValue = formInput.value;
-  const formInputValue2 = formInputValue;
+  const formEmailValue = formEmail.value;
+  const formEmailValue2 = formEmailValue;
+
   if (e.target.classList[0] === 'form-button') {
+    formEmail.value = formEmail.value.replace(/\s/g, '');
     if (formName.value === '') {
-      formTypeErrors.innerHTML = 'please type your name!';
-      formTypeErrors.style.display = 'flex';
-      formSubmitMsg.classList.remove('form-submit-msg-appear');
-    } else if (formInput.value === '') {
-      formTypeErrors.innerHTML = 'please type your Email!';
-      formTypeErrors.style.display = 'flex';
-      formSubmitMsg.classList.remove('form-submit-msg-appear');
-    } else if (formInputValue !== formInputValue2.toLowerCase()) {
-      formSubmitMsg.classList.remove('form-submit-msg-appear');
-      formTypeErrors.style.display = 'none';
-      for (let i = 0; i < formInputValue.length; i++) {
-        if (formInputValue[i] === formInputValue2[i].toUpperCase()) {
+      formSubmitBtn.disabled = false;
+    } else if (formEmailValue === '') {
+      formError.classList.remove('form-error-appear');
+      formSubmitBtn.disabled = false;
+    } else if (formEmailValue !== formEmailValue2.toLowerCase()) {
+      for (let i = 0; i < formEmailValue.length; i++) {
+        if (formEmailValue[i] === formEmailValue2[i].toUpperCase()) {
           formError.classList.add('form-error-appear');
+          formError.innerHTML = 'Email alphabets should be in lowerCase!';
+          formError.style.color = 'red';
+          formSubmitBtn.disabled = true;
         }
       }
+    } else if (formEmailValue.indexOf('@') < 1) {
+      formError.classList.add('form-error-appear');
+      formError.innerHTML = 'please correct your Email!';
+      formError.style.color = 'red';
+      formSubmitBtn.disabled = false;
+    } else if (formEmailValue.indexOf('.') < formEmailValue.indexOf('@') || formEmailValue.indexOf('.') === formEmailValue.length - 1 || formEmailValue.indexOf('.') === formEmailValue.indexOf('@') + 1) {
+      formError.classList.add('form-error-appear');
+      formError.innerHTML = 'please correct your Email!';
+      formError.style.color = 'red';
+      formSubmitBtn.disabled = false;
     } else if (formText.value === '') {
-      formTypeErrors.style.display = 'flex';
-      formTypeErrors.innerHTML = 'please write massage!';
-      formSubmitMsg.classList.remove('form-submit-msg-appear');
-    } else {
-      formTypeErrors.style.display = 'none';
       formError.classList.remove('form-error-appear');
-      if (formName.value !== '' && formInput.value !== '' && formInput.value.indexOf('@') !== -1 && formText.value !== '') {
-        formSubmitMsg.classList.add('form-submit-msg-appear');
-        formName.value = '';
-        formInput.value = '';
-        formText.value = '';
-      } else {
-        formSubmitMsg.classList.remove('form-submit-msg-appear');
-        formTypeErrors.style.display = 'flex';
-        formTypeErrors.innerHTML = 'please correct your Email';
-      }
+      formSubmitBtn.disabled = false;
+    } else if (formName.value !== '' && formEmailValue !== '' && formText.value !== '') {
+      formError.classList.add('form-error-appear');
+      formError.innerHTML = 'Form sent seccesfully';
+      formError.style.color = 'white';
+      formSubmitBtn.disabled = false;
+      const formData = {
+        name: formName.value,
+        email: formEmail.value,
+        text: formText.value,
+      };
+
+      const localStorageStringyfy = JSON.stringify(formData);
+      localStorage.setItem('formData', localStorageStringyfy);
     }
   }
+  if (e.target.classList[1] === 'form-email') {
+    formSubmitBtn.disabled = false;
+  }
 }));
+
+const localStorageParse = JSON.parse(localStorage.getItem('formData'));
+
+formName.value = localStorageParse.name;
+formEmail.value = localStorageParse.email;
+formText.value = localStorageParse.text;
