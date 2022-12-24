@@ -46,24 +46,6 @@ main {
   color: rgb(255, 0, 0);
 }
 
-.form-submit-msg-disappear {
-  display: none;
-}
-
-.form-submit-msg-appear {
-  display: flex;
-  color: white;
-}
-
-.form-type-errors-disappear {
-  display: none;
-  color: red;
-}
-
-.form-type-errors-appear {
-  display: flex;
-}
-
 /* for mobile */
 
 @media (max-width: 767px) {
@@ -1525,12 +1507,6 @@ main {
 
   .form-button:active {
     background-color: #5e6efb;
-  }
-
-  .form-button:disabled {
-    background-color: none;
-    color: black;
-    border: black;
   }
 
   .end-line {
