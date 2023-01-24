@@ -43,7 +43,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://huzaifakhan0308.github.io/)
+- [Live Demo Link](https://huzaifakhan0308.github.io/personal-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
