@@ -26,10 +26,13 @@ mobileMenu.addEventListener('click', ((e) => {
 
 const storeData = [
   {
-    name: 'Tonic',
-    description: 'A daily selection of privately personalized reads; no accounts or sign- ups required',
-    imagesrc: 'assets/images/project1 img.svg',
+    name: 'ICC Mens T20 world cup, 2024',
+    description: 'The ICC Mens T20 World Cup is the premier international tournament for Twenty20 cricket, set to take place in 2024',
+    imagesrc: 'assets/images/project1 img.png',
     technologies: ['html', 'css', 'javaScript'],
+    aboutProjectDesktop: 'The ICC Mens T20 World Cup is the international championship of Twenty20 cricket.The tournament is organized by the International Cricket Council, with the host nation or nations determined by a bidding process.The tournament is typically held every two years and features the top national teams from around the world.The next edition of the tournament is scheduled to take place in 2024. The tournament format will be round- robin and knockout, where the teams will play a set of matches against each other in the group stage, and the top teams will advance to the knockouts and play for the World Cup',
+    aboutProjectMobile: 'The ICC Mens T20 World Cup is the international championship of Twenty20 cricket.The tournament is organized by the International Cricket Council, with the host nation or nations determined by a bidding process.The tournament is typically held every two years and features the top national teams from around the world.',
+    href: 'https://huzaifakhan0308.github.io/capston-project/',
     link: 'link_to_live_version.com',
   },
   {
@@ -84,11 +87,17 @@ function popupsDisappearButton() {
 
 const popupsBootstrapLanguageDiv = document.querySelector('.bootstrap-language');
 const popupsRubyLanguageDiv = document.querySelector('.ruby-language');
+const popupsProjectDesktop = document.querySelector('.popups-project-p-desktop');
+const popupsProjectMobile = document.querySelector('.popups-project-p-mobile');
+const seeliveaTag = document.querySelector('.see-live-aTag');
 
 function projectViewButton1() {
   popups.style.display = 'flex';
   popupsProjectImage.src = storeData[0].imagesrc;
   popupProjectTitle.innerHTML = storeData[0].name;
+  popupsProjectDesktop.innerHTML = storeData[0].aboutProjectDesktop;
+  popupsProjectMobile.innerHTML = storeData[0].aboutProjectMobile;
+  seeliveaTag.href = storeData[0].href;
   popupsBootstrapLanguageDiv.classList.remove('bootstrap-language-disappear');
   popupsRubyLanguageDiv.classList.remove('ruby-language-disappear');
 }

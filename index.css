@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   display: flex;
   align-items: center;
@@ -118,9 +122,10 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    position: fixed;
     z-index: 2;
     background: #c1c7d0ce;
+    height: 100vh;
+    position: fixed;
   }
 
   .popups-container {
@@ -138,6 +143,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    position: relative;
   }
 
   .popup-project-title {
@@ -190,7 +196,8 @@ main {
     color: #67798e;
     font-size: large;
     cursor: pointer;
-    margin: 10px;
+    position: absolute;
+    margin-left: 87%;
   }
 
   .popups-project-img {
@@ -433,8 +440,6 @@ main {
   }
 
   .project-title {
-    width: 250px;
-    height: 36px;
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -818,6 +823,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    position: relative;
   }
 
   .popup-project-title {
@@ -868,7 +874,9 @@ main {
     color: #67798e;
     font-size: large;
     cursor: pointer;
-    margin: 10px;
+    margin-left: 96%;
+    margin-top: 1.5vh;
+    position: absolute;
   }
 
   .popups-project-img {
@@ -947,6 +955,11 @@ main {
     justify-content: flex-start;
     align-items: center;
     padding-top: 30px;
+  }
+
+  .see-live-aTag {
+    text-decoration: none;
+    list-style: none;
   }
 
   .popups-button-see {
@@ -1110,8 +1123,6 @@ main {
   }
 
   .project-title {
-    width: 260px;
-    height: 46px;
     color: #091e42;
     font-family: "Poppins", sans-serif;
     font-style: normal;
